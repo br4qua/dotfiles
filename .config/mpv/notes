@@ -1,0 +1,1 @@
+2025/08 when using celluloid, gamma transfer functions will be ignored. This is due to embedding of mpv via libmpv. 
