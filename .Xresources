@@ -1,0 +1,86 @@
+! =============================================================================
+! Global X11 Settings
+! =============================================================================
+
+! Cursor Configuration
+Xcursor.size: 24
+Xcursor.theme: Adwaita
+
+! Font Rendering (Xft)
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+Xft.rgba: none
+
+! =============================================================================
+! Global Color Scheme (fallback for non-xterm apps)
+! =============================================================================
+
+*background: #0a090b
+*foreground: #ffffff
+
+! Color Palette
+*color0: #2e2e2e
+*color1: #eb4129
+*color2: #abe047
+*color3: #f6c744
+*color4: #47a0f3
+*color5: #7b5cb0
+*color6: #64dbed
+*color7: #e5e9f0
+*color8: #565656
+*color9: #ec5357
+*color10: #c0e17d
+*color11: #f9da6a
+*color12: #49a4f8
+*color13: #a47de9
+*color14: #99faf2
+*color15: #ffffff
+
+! =============================================================================
+! Application-Specific Settings
+! =============================================================================
+
+! XTerm Terminal Emulator
+XTerm*allowBoldFonts: false
+XTerm*VT100*geometry: 158x42
+
+xterm*allowBoldFonts: false
+xterm*faceName: Hack Nerd Font Mono
+xterm*faceSize: 16
+xterm*geometry: 88x28
+xterm*internalBorder: 16
+xterm*renderFont: true
+xterm*saveLines: 10000
+xterm*scrollBar: false
+xterm*termName: xterm-256color
+
+! XTerm Key Bindings
+xterm*VT100.Translations: #override \
+    Ctrl <Key> minus: smaller-vt-font() \n\
+    Ctrl <Key> plus: larger-vt-font() \n\
+    Ctrl <Key> 0: set-vt-font(d)
+
+! Nsxiv Image Viewer
+Nsxiv.bar.font: xft:DejaVu Sans Mono:size=12
+
+! Rxvt/URxvt Terminal Emulator
+Rxvt*refreshRate: 200
+
+URxvt.boldFont: -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1,-Misc-Fixed-medium-R-*-*-13-120-75-75-C-120-ISO10646-1
+URxvt.font: -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1,-Misc-Fixed-medium-R-*-*-13-120-75-75-C-120-ISO10646-1
+URxvt.geometry: 158x42
+URxvt.scrollBar: false
+URxvt.skipBuiltinGlyphs: true
+
+! Alternative URxvt font options (commented out)
+!URxvt.font: -misc-fixed-medium-r-semicondensed--18-180-75-75-c-90-iso10646-1
+!URxvt.font: -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
+!URxvt.font: -*-fixed-medium-r-*-*-*-*-*-*-*-*-iso10646-1
+!URxvt.font: xft:DejaVu Sans Mono:size=12
+!URxvt.boldFont: -*-fixed-bold-r-*-*-*-*-*-*-*-*-iso10646-1
+!URxvt.boldFont: -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1
+!URxvt.boldFont: -Misc-Fixed-bold-R-*-*-13-120-75-75-C-60-ISO10646-1
+!URxvt.boldFont: -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso8859-1
